@@ -6,6 +6,15 @@ App = function () {
     document.body.appendChild(canvas);
     paper.setup(canvas);
 
+    paper._mainLayer = new paper.Layer();
+    paper._guiLayer = new paper.Layer();
+    paper._guiLayer.locked = true;
+    paper._mainLayer.activate();
+
+    var toolboxContainer = document.createElement('div');
+    document.body.appendChild(toolboxContainer);
+    PaperToolbox.createView(toolboxContainer);
+
     window.addEventListener('resize', function () {
         fitCanvasToScreen();
     });

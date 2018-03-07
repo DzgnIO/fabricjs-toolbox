@@ -18,14 +18,12 @@
         name: 'Pencil',
         icon: 'pencil.svg',
         onMouseDown : function (e) {
-            console.log('onMouseDown')
             if (!path) {
                 path = new paper.Path({
                     strokeColor: PaperToolbox.getOption('strokeColor'),
                     strokeCap: PaperToolbox.getOption('strokeCap'),
                     strokeWidth: PaperToolbox.getOption('strokeWidth'),
                 });
-                console.log(path)
             }
 
             path.add(e.point);
