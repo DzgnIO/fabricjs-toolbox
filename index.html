@@ -8,15 +8,17 @@
 
     <link rel="stylesheet" type="text/css" href="styles/basic-toolbox.css">
 
-    <script src="lib/paper-full.min.js"></script>
-    <script src="paper-toolbox.js"></script>
+    <script src="lib/fabric.min.js"></script>
+    <script src="lib/paper-toolbox.js"></script>
     <script src="tools/Cursor.js"></script>
     <script src="tools/Pencil.js"></script>
-    <script src="example.js"></script>
+    <script src="tools/Shapes.js"></script>
+    <script src="tools/Text.js"></script>
+    <script src="app.js"></script>
 
     <script>
         window.onload = function () {
-            var app = new App();
+            app = new App();
         }
     </script>
 
@@ -29,5 +31,6 @@
 </head>
 
 <body>
+    <canvas id="paper-canvas"></canvas>
 </body>
 </html>

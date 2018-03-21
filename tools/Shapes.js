@@ -1,8 +1,8 @@
 (function () {
 
-    window.CursorTool = new PaperToolbox.Tool({
-        name: 'Cursor',
-        icon: 'cursor.svg',
+    window.ShapesTool = new PaperToolbox.Tool({
+        name: 'Shapes',
+        icon: 'shapes.svg',
         onMouseDown : function (e) {
             
         },
